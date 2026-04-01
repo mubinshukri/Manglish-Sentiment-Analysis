@@ -1,5 +1,3 @@
-<img width="153" height="21" alt="image" src="https://github.com/user-attachments/assets/d7bfbf14-9048-4a16-a40b-98ee83c609fe" /><img width="1480" height="21" alt="image" src="https://github.com/user-attachments/assets/7d97f7c9-0670-47d8-8db5-1e2c199b2f83" /># Manglish-Sentiment-Analysis
-
 ## Title
 The Potential of Machine Annotation to Replace Human 
 Annotation in Manglish Sentiment Analysis: Opportunities and 
@@ -96,6 +94,28 @@ Extended exploratory analysis and benchmarking pipeline.
 ## Usage Instructions
 
 ### Step 1: Clone the repository
-```bash
+
 git clone https://github.com/yourusername/manglish-sentiment-analysis.git
 cd manglish-sentiment-analysis
+
+### Step 2: Install dependencies
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- torch
+- transformers
+- textblob
+- openpyxl
+- scikit-learn
+- nltk
+- wordcloud
+
+### Step 3: place dataset files
+- TweeterManglishDS.xlsx
+- sentiment_analysis_output.xlsx
+### Step 4: run the main annotation pipeline
+- python sentiment_analysis_bert_cpu_optimized.py
+  
+### Step 5: Run extended analysis
+- python sentiment_analysis_bert_cpu_optimized_more_analysis.py
