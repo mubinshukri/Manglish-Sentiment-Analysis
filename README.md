@@ -119,3 +119,47 @@ cd manglish-sentiment-analysis
   
 ### Step 5: Run extended analysis
 - python sentiment_analysis_bert_cpu_optimized_more_analysis.py
+
+## Requirements
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- torch
+- transformers
+- textblob
+- openpyxl
+- scikit-learn
+- nltk
+- wordcloud
+
+## Methodology
+
+The project follows this workflow:
+
+1. Data Loading and Cleaning
+  - Remove null tweets
+  - Standardize sentiment labels
+2. Human Annotation Processing
+  - Convert categorical labels into numerical classes
+3. Automated Annotation
+  - TextBlob polarity-based labeling
+  - M-BERT multilingual sentiment classification
+  - Hybrid lexicon-enhanced M-BERT refinement
+4. Intrinsic Evaluation
+  - Sentiment distribution comparison
+  - Entropy analysis
+5. Extrinsic Evaluation
+  - Compare annotations against human labels
+  - Train SVM and Random Forest using TF-IDF features
+  - Evaluate using Accuracy, Precision, Recall, and F1-score
+6. Visualization
+  - Stacked bar plots
+  - Radar charts
+  - Word clouds
+  - Confusion matrices
+
+## Citation
+- M. S. Md Suhaimin, M. H. Ahmad Hijazi, and E. G. Moung, “Annotated dataset for sentiment 
+analysis and sarcasm detection: Bilingual code-mixed English-Malay social media data in the public 
+security domain,” Data in Brief, vol. 55, p. 110663, Aug. 2024, doi: 10.1016/j.dib.2024.110663.
